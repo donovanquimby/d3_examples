@@ -21,8 +21,8 @@
                 <img src="resources/d3logo.png">
             </div>
             <div class="col-md-10">
-                <h1 class="logo">D3 Examples</h1>
-                <h4>Richard Dalton</h4>
+                <h1 class="logo">D3 Data Visualization</h1>
+                <h4>Donovan Quimby</h4>
                 <div class="btn-group btn-group-md" role="group" aria-label="...">
                     <a href="index.html" class="btn btn-default" role="button">Home</a>
                     <a href="chloropleth.html" class="btn btn-default" role="button">Chloropleth</a>
@@ -36,69 +36,19 @@
 </header>
 
 <div class="container">
-    <h3>Data Driven Documents</h3>
-    <p>D3 allows document elements to be generated from data. Hence the name Data Driven Documents (D3).</p>
-    <p>In the example below, and array of json key-value pairs are rendered as headings and paragraphs. We append a div
-    for each data item, and then within that div we render a heading for the key and a paragraph for the value.</p>
+    <h3></h3>
+    <p>The links above navigates to several examples of D3.js visualizations generated from data pertaining to board games. Brief descriptions of the visualizations are given below.</p>
+<ul>
+  <li>Chloropleth: Blah Blah Blah</li>
+  <li>Force Directed Graph: Blah Blah Blah</li>
+  <li>Interactive Line Plot: Blah Blah Blah</li>
+  <li>multiple line plots Line Plot: Blah Blah Blah</li>
+</ul>  
 
-    <div class="col-md-6">
-        <div id="draw_here"></div>
-    </div>
-
-    <div class="col-md-6">
-<pre>
-    data = [
-        {"key": "First Heading", "value":"First Paragraph"},
-        {"key": "Second Heading", "value":"Second Paragraph"},
-        {"key": "Third Heading", "value":"Third Paragraph"},
-        {"key": "Fourth Heading", "value":"Fourth Paragraph"},
-        {"key": "Fifth Heading", "value":"Fifth Paragraph"},
-    ];
-
-    //Create SVG element
-    var doc = d3.select("#draw_here");
-
-    var doc_item = doc.selectAll("div")
-            .data(data)
-            .enter()
-            .append("div");
-
-    doc_item.append("h4").text(function (d) {
-                return d.key;
-            });
-
-    doc_item.append("p").text(function (d) {
-        return d.value;
-    })
-</pre>
     </div>
 </div>
 
-<script>
-    data = [
-        {"key": "First Heading", "value":"First Paragraph"},
-        {"key": "Second Heading", "value":"Second Paragraph"},
-        {"key": "Third Heading", "value":"Third Paragraph"},
-        {"key": "Fourth Heading", "value":"Fourth Paragraph"},
-        {"key": "Fifth Heading", "value":"Fifth Paragraph"},
-    ];
 
-    //Create SVG element
-    var doc = d3.select("#draw_here");
-
-    var doc_item = doc.selectAll("div")
-            .data(data)
-            .enter()
-            .append("div");
-
-    doc_item.append("h4").text(function (d) {
-                return d.key;
-            });
-
-    doc_item.append("p").text(function (d) {
-        return d.value;
-    })
-</script>
 
 </body>
 </html>
