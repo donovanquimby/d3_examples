@@ -1,0 +1,52 @@
+/* AXES */
+/* ticks */
+    .axis line{
+    stroke: #706f6f;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+    }
+    
+    /* axis contour */
+    .axis path {
+    stroke: #706f6f;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+    }
+    
+    /* axis text */
+    .axis text {
+    fill: #2b2929;
+    font-family: sans-serif;
+    font-size: 100%;
+    }
+
+    /* LINE CHART */
+    path {
+    fill: none;
+    stroke: #2b2929;
+    stroke-width: 2;
+    }
+
+    .legend rect {
+        fill:white;
+        stroke:black;
+        opacity:0.8;}
+
+    .title {
+            fill: black;
+            font-size: 1.7em;
+            font-family: sans-serif;
+            text-anchor: middle;
+            vertical-align: middle;
+            
+        }
+
+    .name {
+            fill: blue;
+            font-weight: bold;
+            font-size: 1.2em;
+            font-family: sans-serif;
+            text-anchor: middle;
+            vertical-align: middle;
+            
+        }
