@@ -300,7 +300,7 @@ dataset.then(function (d, i) {
         .attr("class", "name")
         .attr("x", ((width / 2) + margin.left))
         .attr("y", 80)
-        .text("dquimby3")
+        .text("")
 
 
 
