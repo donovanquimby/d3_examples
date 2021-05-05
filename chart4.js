@@ -220,7 +220,7 @@ dataset.then(function (data) {
     svg4.append("text")
         .attr("x", width + 70)
         .attr("y", height + 50)
-        .text("dquimby3")
+        .text("")
         .style("font-size", "1em")
         .style("text-anchor", "middle")
         .style("fill", "black")
