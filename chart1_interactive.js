@@ -233,7 +233,7 @@ dataset.then(function (d, i) {
                     .attr("y", function (d) { return y(d.name.substring(0, 10)); })
                     .attr("x", 150)
                     .attr("height", y.bandwidth())
-                    .attr("fill", "CadetBlue")
+                    .attr("fill", function () { return color(this.parentNode.__data__.key) })
                     .style("opacity", 0.7);
 
                 svgBar.append("text")
